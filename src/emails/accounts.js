@@ -5,11 +5,11 @@ sgMail.setApiKey('SG.uBTf5K5IStalVthUuicS1g.nW4-06acz3HW6y3Uf2-ZLh1zltiGXCkD5X8l
 
 
 const sendWelcomeEmail = (email, name)=>{
-    sgMail.send({                         //send returns promise
+    sgMail.send({                         
         to: email,
         from: 'ayushthth@gmail.com',
         subject: 'Thanks for joining in!',
-        text: `Welcome to the app, ${name}. Let me know how you get along with the app.`
+        text: `Welcome to the app, ${name}`
     })
 }
 const sendCancellationEmail = (email, name)=>{
